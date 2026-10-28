@@ -1,0 +1,18 @@
+{
+  "name": "doalu-mcp",
+  "version": "0.1.0",
+  "description": "Where to stay, by area: an MCP server and command line over the doalu.com guide (find_place, where_to_stay, list_areas), every answer linking its doalu.com page.",
+  "mcpName": "com.doalu/doalu-mcp",
+  "type": "module",
+  "bin": { "doalu-mcp": "bin/doalu-mcp.js" },
+  "exports": "./src/guide.js",
+  "files": ["bin/", "src/", "skills/", "README.md", "LICENSE", "server.json", "manifest.json"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "keywords": ["mcp", "model-context-protocol", "mcp-server", "travel", "hotels", "where-to-stay", "neighborhoods", "cli", "agent-skill"],
+  "homepage": "https://doalu.com",
+  "repository": { "type": "git", "url": "git+https://github.com/Doalu/doalu-mcp.git" },
+  "bugs": { "url": "https://github.com/Doalu/doalu-mcp/issues" },
+  "author": "doalu <info@doalu.com>",
+  "license": "MIT"
+}

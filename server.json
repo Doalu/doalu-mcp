@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.doalu/doalu-mcp",
+  "title": "doalu.com where to stay",
+  "description": "Where to stay in a city: which areas suit whom, with links to the doalu.com guide pages.",
+  "repository": {
+    "url": "https://github.com/Doalu/doalu-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://doalu.com",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/Doalu/doalu-mcp/releases/download/v0.1.0/doalu-mcp-0.1.0.mcpb",
+      "fileSha256": "bf7f12053fa0c8af0629271d39b97a119f07d8b3aab95e3d4771a955d015b3f0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

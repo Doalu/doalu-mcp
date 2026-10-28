@@ -1,0 +1,23 @@
+{
+  "manifest_version": "0.3",
+  "name": "doalu-mcp",
+  "display_name": "doalu.com where to stay",
+  "version": "0.1.0",
+  "description": "Where to stay in a city: which areas suit whom, with links to the doalu.com guide pages.",
+  "author": { "name": "doalu", "email": "info@doalu.com", "url": "https://doalu.com" },
+  "homepage": "https://doalu.com",
+  "repository": { "type": "git", "url": "https://github.com/Doalu/doalu-mcp" },
+  "license": "MIT",
+  "keywords": ["travel", "hotels", "where-to-stay", "neighborhoods"],
+  "server": {
+    "type": "node",
+    "entry_point": "bin/doalu-mcp.js",
+    "mcp_config": { "command": "node", "args": ["${__dirname}/bin/doalu-mcp.js"] }
+  },
+  "tools": [
+    { "name": "find_place", "description": "Find countries, regions, cities and districts with a doalu.com where-to-stay page by name." },
+    { "name": "where_to_stay", "description": "Which areas to stay in for a place, who each one suits and why, with doalu.com links." },
+    { "name": "list_areas", "description": "The stay areas and the places within a place, with doalu.com links." }
+  ],
+  "compatibility": { "runtimes": { "node": ">=18.0.0" } }
+}
